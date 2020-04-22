@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: post-service
+  main:
+    allow-bean-definition-overriding: true
+
+server:
+  port: 8080
+  servlet:
+    contextPath: /api/v1/post
+  max-http-header-size: 102400
+
+lombok:
+  equalsAndHashCode:
+    callSuper: call
